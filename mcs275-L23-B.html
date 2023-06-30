@@ -1,0 +1,155 @@
+<html>
+ <head>
+  <title> Building HTML Forms </title>
+ </head>
+<body>
+
+<form action = "https://www.mcs275examplesite.com/receiver.php" method = "get">
+ <p> Form control will be added to this area. </p>
+</form>
+
+<!-- Form element require an action attribute. The value of this attribute is the URL of the webpage on the server that will receive the information that will be entered into the form and submitted.-->
+
+<!-- Information inside a form can be sent either through "get" or "post" methods-->
+<!-- Use get for short forms or retrieving information from a server -->
+<!-- Use the post method for long forms, transmission of sensitive data, communicate with a remote database, such as adding or deleting of data.--> 
+
+<!-- A basic Login form with Username and Passowrd request-->
+<form action = "https://www.mcs275examplesite.com/login.php" method = "post">
+ <p> 
+ Username: 
+ <input type = "text" name = "username" size = "16" maxlength = "20" />
+ </p>
+ <p>
+ Password:
+ <input type = "text" name = "password" size = "16" maxlength = "20" />
+ </p>
+</form> 
+
+<hr />
+
+<!-- Text Box-->
+<form action = "https://www.mcs275examplesite.com/comments.php" method = "post">
+ <p> 
+  Write your review of the movie?
+ </p>  
+ <textarea name = "comments" cols = "55" rows = "10"> Tell us what you thought... </textarea>
+</form>
+
+<hr />
+
+<!-- Radio Button-->
+<form action = "https://www.mcs275examplesite.com/moviegenre.php" method = "post">
+ <p> 
+  Tell us what kind of movie genre you prefer:  
+  <br />
+  <input type = "radio" name = "genre" value = "drama" checked = "checked"/> Drama
+  <input type = "radio" name = "genre" value = "western" /> Western
+  <input type = "radio" name = "genre" value = "mystery"  /> Mystery 
+ </p>
+</form>
+
+<hr />
+
+<!-- Check Box-->
+<form action = "https://www.mcs275examplesite.com/entertainmentplatform.php" method = "post">
+ <p> 
+  Select an entertainment platform(s) :
+  <br />
+   <input type = "checkbox" name = "platform" value = "netflix" checked = "checked"/> Netflix
+   <input type = "checkbox" name = "platform" value = "amazon" /> Amazon
+   <input type = "checkbox" name = "platform" value = "itunes" /> iTunes
+   <input type = "checkbox" name = "platform" value = "acorn"  /> Acorn
+ </p>
+</form>
+
+<hr />
+
+<!-- Drop Down List Box-->
+<form action = "https://www.mcs275examplesite.com/devices.php" method = "post">
+ <p> 
+  Select a device you use to listen to music:
+ </p>
+ <select name = "devices">
+  <option value = "radio"> Radio </option>
+  <option value = "ipod"> iPod </option>
+  <option value = "computer"> Computer </option>
+  <option value = "tablet"> Tablet </option>
+ </select>
+</form>
+
+<hr />
+
+<!-- Multiple Select Box-->
+<form action = "https://www.mcs275examplesite.com/instruments.php" method = "post">
+<p> 
+ Select all instruments you play (hold down + control key for multiple selections):
+</p>
+ <select name = "instruments" size = "4" multiple = "multiple">
+  <option value = "guitar" selected = "selected"> Guitar </option> <!-- Don't need to specify selected-->
+  <option value = "bass"> Bass </option>
+  <option value = "drums"> Drums </option>
+  <option value = "keyboard"> Keyboard </option>
+ </select>
+</form>
+  
+<hr />
+
+<!-- File Input Box-->
+<form action = "https://www.mcs275examplesite.com/upload.php" method = "post">
+ <p> 
+  Upload your document:
+ </p>
+ <input type = "file" name = "document" />
+ <br />
+ <input type = "submit" value = "Upload" />
+</form>
+
+<hr />
+
+<!-- Submit Button-->
+<form action = "https://www.mcs275examplesite.com/subscription.php" method = "post">
+ <p> 
+  Subscribe to receive our promotional weekly email 
+ </p>
+ <input type = "text" name = "email" />
+ <input type = "submit" name = "subscribe" value = "Subscribe"/>
+</form>
+
+<hr />
+
+<!-- Grouping Form Elements-->
+<fieldset>
+ <legend> Contact Information </legend>
+ <label> Email: <br />
+  <input type = "text" name = "email" />
+ </label>
+ <br /> 
+ </label>
+
+ <label> Mobile: <br />
+  <input type = "text" name = "mobile" />
+ </label>
+
+ <br /> 
+   
+ <label> Telephone: <br />
+  <input type = "text" name = "telephone" />
+ </label>
+ <br /> 
+</fieldset>
+
+<hr />
+
+<!-- Search Input-->
+<form action = "https://www.mcs275examplesite.com/search.php" method = "post">
+ <p> 
+ Search:
+ </p>
+ <input type = "search" name = "search" placeholder = "Enter keyword"/>
+ <input type = "submit" value = "Search"/>
+</form>
+
+
+</body>
+</html>
